@@ -102,3 +102,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# === Telegram auto-push ===
+try:
+    import os
+    from src.telegram_client import send_file
+    report_path = "reports/latest_report.md"
+    if os.path.exists(report_path):
+        send_file(report_path)
+        print("📤 报告已发送到 Telegram")
+    else:
+        print("❌ 没找到报告文件")
+except Exception as e:
+    print("⚠️ 发送到 Telegram 失败：", e)
+
