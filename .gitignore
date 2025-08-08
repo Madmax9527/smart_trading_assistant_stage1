@@ -1,15 +1,27 @@
-# Python
+# Python 缓存
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境
 .venv/
 venv/
 
-# Env/Secrets
+# 环境变量文件（防止泄露 API key 等）
 .env
+.env.*
 
-# VS Code
+# VS Code 配置
 .vscode/
 
-# System
+# 系统文件
 .DS_Store
 Thumbs.db
+
+# 日志和临时文件
+*.log
+*.tmp
+
+# 报告和生成文件
+reports/
