@@ -10,7 +10,6 @@ venv/
 
 # 环境变量文件（防止泄露 API key 等）
 .env
-.env.*
 
 # VS Code 配置
 .vscode/
